@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/sd"
+    android:focusable="false"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add New Questions"
+        android:id="@+id/textView6"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+
+
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:backgroundTintMode="src_over"
+        android:shadowColor="@color/accent_material_light"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="30dp"
+        android:paddingTop="60dp"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/textView6"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        android:onClick="showAddForm"
+        android:id="@+id/button4"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:id="@+id/button11"
+        android:onClick="showDivForm"
+        android:layout_below="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplication"
+        android:id="@+id/button12"
+        android:onClick="showMulForm"
+        android:layout_below="@+id/button13"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtraction"
+        android:id="@+id/button13"
+        android:onClick="showSubForm"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

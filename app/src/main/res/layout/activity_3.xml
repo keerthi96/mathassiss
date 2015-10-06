@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.keerthi.mathassiss.Subtraction"
+
+    android:background="@drawable/sd"
+   >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:id="@+id/scroll">
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:id="@+id/addition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/sentenc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBTRACTION"
+            android:layout_weight="0.36"
+            android:textSize="30dp"
+            android:paddingBottom="15dp"
+            android:typeface="sans"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="90dp"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/sentence1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtraction often signified by the minus symbol is one of the four elementary, mathematical operations of arithmetic, with the others being addition, multiplication and division. "
+            android:layout_weight="0.16"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:textColor="#FFFFFF" />"
+        android:layout_weight="1" />/>
+
+        <TextView
+            android:id="@+id/sentence2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The subtraction of two whole numbers is the difference of those quantities. Subtraction is the mathematical operation that represents the operation of removing objects from a collection"
+            android:layout_weight="0.13"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/sentence4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For example, lets, say there are 5 apples, we remove 3 more apples, then totally we have 5-3,  2 apples"
+            android:typeface="sans"
+            android:textSize="22dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="0.28"
+            android:textColor="#FFFFFF" />
+        android:layout_width="wrap_content"
+
+        <TextView
+            android:id="@+id/sentence5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5-2=3"
+            android:textSize="22dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10-3=7"
+            android:id="@+id/textView"
+            android:layout_weight="0.11"
+            android:textSize="22dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center" android:paddingTop="20dp">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:text="PRACTICE"
+                android:id="@+id/button3"
+                android:layout_weight="0.16"
+                android:onClick="practice2"
+               />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:text="TEST YOUR KNOWLEDGE"
+                android:id="@+id/button6"
+                android:onClick="test2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

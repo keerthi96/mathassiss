@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="com.example.keerthi.mathassiss.Activity2"
+    android:background="@drawable/sd">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:id="@+id/scroll">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/addition"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignTop="@+id/textView2">
+        <TextView
+            android:id="@+id/sentenc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICATION"
+            android:layout_weight="0.36"
+            android:paddingLeft="50dp"
+            android:textSize="30dp"
+            android:paddingBottom="15dp"
+            android:typeface="sans"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sentence1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplication often signified by the cross symbol is one of the four elementary, mathematical operations of arithmetic, with the others being addition,subtraction and division. "
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/sentence2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The multiplication of two whole numbers is the product of those quantities.Multiplication is the mathematical operation that represents the operation of adding as many copies of one of them as the value of the other"
+            android:layout_weight="0.13"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/sentence4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For example,3 multiplied by 4 , can be calculated by adding 3 copies of 4 together. Here 3 and 4 are the factors and 12 is the product"
+            android:typeface="sans"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:layout_weight="0.28"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/sentence4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXAMPLE:"
+            android:layout_weight="0.28"
+            android:typeface="sans"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/sentence5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x2=10"
+            android:paddingBottom="10dp"
+            android:textSize="22dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10x3=30"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView"
+
+            android:textSize="22dp"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:id="@+id/linearr">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:text="PRACTICE"
+                android:id="@+id/button3"
+                android:layout_weight="0.16"
+                android:onClick="practice3"
+                />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:text="TEST YOUR KNOWLEDGE"
+                android:id="@+id/button6"
+                android:layout_weight="0.16"
+                android:onClick="test3"
+                />
+        </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

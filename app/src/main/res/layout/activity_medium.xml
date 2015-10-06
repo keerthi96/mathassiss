@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.keerthi.mathassiss.Subtraction"
+    android:background="@drawable/sd">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="LEVEL:MEDIUM"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="33dp"
+            android:textAlignment="center" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:textColor="#FFFFFF"
+
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="50dp"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:textColor="#FFFFFF"
+
+                android:textAlignment="center" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:layout_marginStart="150dp"
+            android:textColor="#ff14ba"
+            android:textSize="18dp"
+
+
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:textSize="19dp"
+
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:outlineProvider="background"
+            android:visibility="visible">
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:paddingTop="15dp"
+                android:checked="true"
+                android:text="RadioButton"
+                />
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:paddingTop="15dp"
+                android:text="RadioButton"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:paddingTop="15dp"
+    />
+        </RadioGroup>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:text="NEXT"
+            android:textSize="25dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.keerthi.mathassiss" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:label="@string/title_activity_2" >
+        </activity>
+        <activity
+            android:name=".Activity3"
+            android:label="@string/title_activity_3"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Practice1"
+            android:label="@string/title_activity_practice1"
+            android:parentActivityName=".Activity2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity2" />
+        </activity>
+        <activity
+            android:name=".Activity4"
+            android:label="@string/title_activity_4"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activity5"
+            android:label="@string/title_activity_5"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Test1"
+            android:label="@string/title_activity_test1"
+            android:parentActivityName=".Activity2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity2" />
+        </activity>
+        <activity
+            android:name=".Practice2"
+            android:label="@string/title_activity_practice2"
+            android:parentActivityName=".Activity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity3" />
+        </activity>
+        <activity
+            android:name=".Test2"
+            android:label="@string/title_activity_test2"
+            android:parentActivityName=".Activity3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity3" />
+        </activity>
+        <activity
+            android:name=".Practice3"
+            android:label="@string/title_activity_practice3"
+            android:parentActivityName=".Activity4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity4" />
+        </activity>
+        <activity
+            android:name=".Practice4"
+            android:label="@string/title_activity_practice4"
+            android:parentActivityName=".Activity4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity4" />
+        </activity>
+        <activity
+            android:name=".Test3"
+            android:label="@string/title_activity_test3"
+            android:parentActivityName=".Activity4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity4" />
+        </activity>
+        <activity
+            android:name=".Test4"
+            android:label="@string/title_activity_test4"
+            android:parentActivityName=".Activity5" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.Activity5" />
+        </activity>
+        <activity
+            android:name="com.example.keerthi.trial.EditAnimal"
+            android:label="@string/title_activity_edit_animal" >
+        </activity>
+        <activity
+            android:name=".Adminlogin"
+            android:label="@string/title_activity_adminlogin"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.keerthi.mathassiss.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".DBController"
+            android:label="@string/title_activity_dbcontroller" >
+        </activity>
+        <activity
+            android:name=".NewAddition"
+            android:label="@string/title_activity_new_addition" >
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:name=".NewSub"
+            android:label="@string/title_activity_new_sub" >
+        </activity>
+        <activity
+            android:name=".NewMul"
+            android:label="@string/title_activity_new_mul" >
+        </activity>
+        <activity
+            android:name=".NewDiv"
+            android:label="@string/title_activity_new_div" >
+        </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz" >
+        </activity>
+        <activity
+            android:name=".Easy"
+            android:label="@string/title_activity_easy" >
+        </activity>
+        <activity
+            android:name=".Medium"
+            android:label="@string/title_activity_medium" >
+        </activity>
+        <activity
+            android:name=".Hard"
+            android:label="@string/title_activity_hard" >
+        </activity>
+    </application>
+
+</manifest>
